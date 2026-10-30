@@ -1,1 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c4b5e0">
+  <meta name="description" content="Тихий свет — институт добычи светящегося бескара. Исследуем глубины, сохраняя тишину и структуру металла.">
+  <title>Тихий свет — Институт добычи бескара</title>
+  <link rel="icon" type="image/svg+xml" href="assets/star.svg">
+  <link rel="preload" href="fonts/Spectral-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="assets/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#institute">К содержанию</a>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <header class="header">
+          <a class="brand micro" href="#" aria-label="Тихий свет — главная">ИДБ / ЛАБОРАТОРИЯ ТИХОГО СВЕТА</a>
+          <nav class="micro" aria-label="Основная навигация">
+            <a href="#institute">ИНСТИТУТ</a><span aria-hidden="true">/</span>
+            <a href="#directions">НАПРАВЛЕНИЯ</a><span aria-hidden="true">/</span>
+            <a href="#expedition">КОНТАКТЫ</a>
+          </nav>
+        </header>
+        <div class="hero-art">
+          <h1 id="hero-title" aria-label="Тишина."><span>Ти</span><span>ши</span><span>на.</span></h1>
+          <img class="hero-star" src="assets/star.svg" width="250" height="250" alt="" aria-hidden="true">
+          <img class="hero-rings" src="assets/rings.svg" width="460" height="360" alt="" aria-hidden="true">
+        </div>
+        <p class="hero-slogan">тоже создаёт металл.</p>
+        <div class="hero-bottom">
+          <p>Институт добычи светящегося бескара</p>
+          <a class="button" href="#expedition">Начать спуск <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="micro hero-note">НЕ ВКЛЮЧАЙТЕ СВЕТ. СМОТРИТЕ ВНИМАТЕЛЬНЕЕ.</p>
+      </div>
+    </section>
 
+    <section class="institute" id="institute" aria-labelledby="institute-title">
+      <div class="container institute-grid">
+        <figure class="specimen">
+          <img class="cave" src="assets/cave.jpg" alt="Светящиеся кристаллы в глубине тёмной пещеры" width="355" height="313">
+          <figcaption><span class="sample-code">ОБРАЗЕЦ 009</span><span class="micro">СОБСТВЕННОЕ СВЕЧЕНИЕ</span></figcaption>
+          <img class="specimen-star" src="assets/star.svg" width="230" height="230" alt="" aria-hidden="true">
+        </figure>
+        <div class="institute-copy">
+          <h2 id="institute-title">Свет, которому<br>нужна темнота.</h2>
+          <p>На глубине более двух тысяч метров бескар начинает светиться. Резкий свет и вибрация гасят его на месяцы.</p>
+          <p>Мы изучаем жилы, не нарушая условий их роста.</p>
+          <div class="depth"><span>−2 140</span><p class="micro">МЕТРОВ / ОТМЕТКА СВЕЧЕНИЯ</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="directions" id="directions" aria-labelledby="directions-title">
+      <div class="container">
+        <h2 id="directions-title"><span>Меньше шума.</span><span>Больше открытий.</span></h2>
+        <ol class="protocols">
+          <li><span class="micro number">01</span><div><h3>Картирование свечения</h3><p>Спектральная съёмка по собственному сиянию жилы.</p></div></li>
+          <li><span class="micro number">02</span><div><h3>Резонансное сканирование</h3><p>Чистота сплава — по частоте отклика решётки.</p></div></li>
+          <li><span class="micro number">03</span><div><h3>Споровые светильники</h3><p>Биолюминесцентные лишайники вместо фонарей.</p></div></li>
+          <li><span class="micro number">04</span><div><h3>Протокол тишины</h3><p>Передвижение и связь без нарушения среды.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="expedition" id="expedition" aria-labelledby="expedition-title">
+      <div class="container">
+        <h2 id="expedition-title"><span>На глубине</span><span>есть место вам.</span></h2>
+        <div class="join-grid">
+          <svg class="down-arrow" viewBox="0 0 200 240" fill="none" aria-hidden="true"><path d="M100 0V205M12 122L100 210L188 122" stroke="currentColor" stroke-width="34"/></svg>
+          <div class="join-copy"><h3>Партия «Глубина-9» / март 2027</h3><p>Ищем биофизиков, спелеологов и операторов резонансной съёмки.</p><button class="button" type="button" data-open-application>Заявка на спуск <span aria-hidden="true">↗</span></button></div>
+        </div>
+        <footer class="footer micro"><span>ИНСТИТУТ ДОБЫЧИ БЕСКАРА</span><span>2027 <b aria-hidden="true">/</b> МАНДАЛОР</span></footer>
+      </div>
+    </section>
+  </main>
+  <dialog class="application" aria-labelledby="application-title">
+    <button class="close-dialog" type="button" aria-label="Закрыть заявку">×</button>
+    <p class="micro">ПАРТИЯ «ГЛУБИНА-9» / 2027</p>
+    <h2 id="application-title">Начать спуск</h2>
+    <form id="application-form">
+      <label>Ваше имя<input name="name" autocomplete="name" required maxlength="100"></label>
+      <label>Электронная почта<input name="email" type="email" autocomplete="email" required maxlength="160"></label>
+      <label>Направление<select name="role"><option>Биофизика</option><option>Спелеология</option><option>Резонансная съёмка</option><option>Другое направление</option></select></label>
+      <button class="button" type="submit">Сохранить заявку <span aria-hidden="true">↗</span></button>
+      <p class="form-note">Учебный проект. Заявка скачивается на ваше устройство, данные не отправляются.</p>
+      <p class="form-status" role="status"></p>
+    </form>
+  </dialog>
+</body>
+</html>
